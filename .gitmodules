@@ -1,3 +1,6 @@
 [submodule "firmware/lib/avr-can-lib"]
 	path = firmware/lib/avr-can-lib
 	url = https://github.com/dergraaf/avr-can-lib.git
+[submodule "firmware0/lib/avr-can-lib"]
+	path = firmware0/lib/avr-can-lib
+	url = https://github.com/dergraaf/avr-can-lib
