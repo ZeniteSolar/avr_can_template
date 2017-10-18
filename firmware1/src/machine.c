@@ -83,7 +83,6 @@ inline void task_idle(void)
     set_state_running();
 }
 
-
 uint16_t can_msg_err = 0;
 /**
  * @brief running task checks the system and apply the control action to pwm.
@@ -91,14 +90,14 @@ uint16_t can_msg_err = 0;
 inline void task_running(void)
 {
     if(can_check_message()){
-        usart_send_string("f0: New message! ");
+        usart_send_string("f1: New message! ");
         can_t msg;
         if(can_get_message(&msg)){
             msg.id +=10;
             can_send_message(&msg);
             usart_send_string("ID: ");
             usart_send_uint16(msg.id);
-            usart_send_string(". Data: ");
+            usart_send_string(". DATA: ");
             for(uint8_t i = 0; i < msg.length; i++){
                 usart_send_uint16(msg.data[i]);
                 usart_send_char(' ');
