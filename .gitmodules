@@ -1,8 +1,0 @@
-[submodule "firmware0/lib/avr-can-lib"]
-	path = firmware0/lib/avr-can-lib
-	url = https://github.com/joaoantoniocardoso/avr-can-lib
-	branch = atmega328p_setup
-[submodule "firmware1/lib/avr-can-lib"]
-	path = firmware1/lib/avr-can-lib
-	url = https://github.com/joaoantoniocardoso/avr-can-lib
-	branch = atmega328p_setup
