@@ -1,4 +1,14 @@
 # avr_can_template
+This is a template for starting a canbus using multiples atmega328p + MCP2515.
+
+To use it:
+```
+git clone --recursive http://github.com/zeniteSolar/avr_can_template
+cd avr_can_template
+./make_libs_all.sh      # make libs
+./make_all.sh           # make firmware0 and firmware1
+./up_all.sh             # make and upload to ACM0 and ACM1 using avrdude
+```
 
 PINOUT for the hardware board
 ---
